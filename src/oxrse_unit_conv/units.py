@@ -5,6 +5,8 @@ from oxrse_unit_conv.meta.classes import Unit
 minute = Unit(name='minute', abbr='min', si=second, to_si_fun=lambda n: n * 60)
 # min shadows the builtin function 'min'
 
+shake = Unit(name='shake', abbr='shake', si=second, to_si_fun=lambda n: n / 10**8)
+
 hour = Unit(name='hour', abbr='h', si=second, to_si_fun=lambda n: n * 3600)
 h = hour
 
