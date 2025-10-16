@@ -10,6 +10,9 @@ shake = Unit(name='shake', abbr='shake', si=second, to_si_fun=lambda n: n / 10**
 hour = Unit(name='hour', abbr='h', si=second, to_si_fun=lambda n: n * 3600)
 h = hour
 
+day = Unit(name='day', abbr='d', si=second, to_si_fun=lambda n: n * 86400)
+d = day
+
 # meter
 kilometer = Unit(name='kilometer', abbr="km", si=meter, to_si_fun=lambda n: n * 1000)
 km = kilometer
